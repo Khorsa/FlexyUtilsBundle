@@ -1,0 +1,35 @@
+{
+  "name": "flexycms/flexyutils-bundle",
+  "version": "0.1.0",
+  "type": "symfony-bundle",
+  "description": "Разные утилиты",
+  "license": "proprietary",
+  "require": {
+    "php": "^7.3",
+    "phpmailer/phpmailer": "^6.1"
+  },
+  "require-dev": {
+  },
+  "config": {
+    "sort-packages": true
+  },
+  "autoload": {
+    "psr-4": {
+      "flexycms\\FlexyUtilsBundle\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "flexycms\\FlexyUtilsBundle\\Tests\\": "tests/"
+    }
+  },
+  "scripts": {
+    "test" : "./vendor/bin/simple-phpunit"
+  },
+  "extra": {
+    "symfony": {
+      "allow-contrib": false,
+      "require": "5.0.*"
+    }
+  }
+}
